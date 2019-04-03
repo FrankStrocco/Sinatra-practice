@@ -1,0 +1,14 @@
+<%= erb :_head %>
+    <div id="wrapper">
+        <div id="mainHeader">
+            <a href="/" title="home" class="logo">
+              <div id="logo">
+                <h1>Explore California</h1>
+              </div>
+            </a>
+            <%= erb :_navigation %>
+        </div>
+<!-- before yield-->
+<%= yield %>
+<!-- after yield-->
+<%= erb :_footer %>
